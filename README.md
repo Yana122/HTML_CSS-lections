@@ -1,1 +1,1 @@
-# HTML_CSS-lections
+# JS_lection

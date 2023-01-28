@@ -1,0 +1,179 @@
+:root {
+    --primary-text-color: rgba(0, 0, 0, 0.8);
+    --title-text-color: #000000;
+    --accent-color: #18A0FB;
+    --primary-white-color: #FFFFFF;
+}
+
+
+body {
+    margin: 0;
+    background-color: #fff;
+    color: var(--primary-text-color);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* цвет основного текста #000000 */
+/* вторичный цвет текста  rgba(0, 0, 0, 0.8) */
+/* белый #FFFFFF */
+/* акцент #18A0FB */
+/* вторичный цвет фона #F5F5F5 */
+
+.logo {
+    color: var(--title-text-color);
+}
+
+.logo:hover {
+    --new-accent: red;
+    color: var(--new-accent);
+}
+
+/* убирает точки возле элементов списка */
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* site-nav */
+.site-nav .link {
+    color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var(--title-text-color);
+}
+
+.site-nav .link.current {
+    color: var(--title-text-color);
+}
+
+/* Page header */
+.page-header {
+    background-color: #ccc;
+}
+
+/* hero */
+.hero {
+    text-align: center;
+}
+
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 60px;
+
+    color: var(--title-text-color);
+}
+
+/* section */
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    outline: tomato;
+}
+
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    color: var(--title-text-color);
+
+    text-align: center;
+
+}
+
+.section-description {
+    margin-top: 0;
+    margin-bottom: 80px;
+
+    font-size: 36px;
+    line-height: 1.39;
+}
+
+/* Features */
+
+.feature-list .title,
+.work-list .title {
+    margin-top: 0;
+    margin-bottom: 24px;
+
+    color: var(--title-text-color);
+}
+
+/* Works */
+.work-list > .item {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    list-style-type: none;
+
+}
+
+.work-list > .item:nth-child(2n) {
+    background-color: red;
+}
+
+.feature-list p {
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+/* Button */
+
+.button {
+    display: inline-block;
+    border-radius: 6px;
+    border: 1px solid;
+    padding: 11px 34px;
+    /* min-width: 130px; */
+    width: 130px;
+    text-align: center;
+
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+    
+}
+
+.button.primary {
+    border: 1px solid var(--accent-color);
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+
+}
+
+.button.secondary {
+    border: 1px solid var(--accent-color);
+
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before;
+*::after {
+    box-sizing: inherit;
+} 
+
+
+.conteiner {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: 2px solid tomato;
+}
+

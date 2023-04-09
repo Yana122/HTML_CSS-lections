@@ -20,6 +20,15 @@ body {
 /* акцент #18A0FB */
 /* вторичный цвет фона #F5F5F5 */
 
+
+/* Утилиты */
+/* убирает точки возле элементов списка */
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .logo {
     color: var(--title-text-color);
 }
@@ -29,15 +38,46 @@ body {
     color: var(--new-accent);
 }
 
-/* убирает точки возле элементов списка */
-.list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+/* Page header */
+.page-header {
+
 }
 
+/* Main nav */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
 /* site-nav */
+
+.site-nav {
+    display: flex;
+    margin-left: 70px;
+}
+
+.site-nav .item {
+    /* outline: 1px solid red; */
+    /* margin-right: 40px; */
+}
+
+/* .site-nav .item:last-child {
+    margin-right: 0;
+} */
+
+.site-nav .item:not(:last-child) {
+    margin-right: 40px;
+}
+
 .site-nav .link {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    display: block;
+
     color: var(--accent-color);
 }
 
@@ -48,6 +88,16 @@ body {
 
 .site-nav .link.current {
     color: var(--title-text-color);
+}
+
+/* auth-nav */
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav .item + item {
+    margin-left: 12px;
 }
 
 /* Page header */
@@ -121,6 +171,28 @@ body {
     background-color: red;
 }
 
+.work-list > item:nth-last-child(2n + 1) .content {
+    margin-left: 84px;
+}
+
+
+
+/* Feetures and examples */
+
+.feature-list {
+    margin: -75px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.feature-list .item {
+    margin: 75px;
+    /* width: 300px; */
+    background-color: tomato;
+    
+}
+
 .feature-list p {
     margin-top: 0;
     margin-bottom: 32px;
@@ -176,4 +248,48 @@ html {
     padding-right: 20px;
     outline: 2px solid tomato;
 }
+
+
+.test-container {
+    width: 1430px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+    display: flex;
+    font-weight: wrap;
+    background-color: teal;
+    /* justify-content: space-between; */
+
+    margin: -15px;
+}
+
+.flex-element {
+    width: calc((100% - 60px) / 3);
+    /* width: 380px; */
+    background-color: tomato;
+    /* margin-right: 30px;  
+    margin-bottom: 30px; */
+}
+/* Альтернатива */
+/* .flex-element:not(:nth-child(3n)) {
+    margin-right: 30px;
+} */
+
+.flex-element:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* .flex-element:nth-child(3n) {
+    margin-right: 0;
+}
+
+flex-element:nth-last-child(-n+3) {
+    margin-bottom: 0;
+} */
+
+
 
